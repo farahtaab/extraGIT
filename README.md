@@ -69,9 +69,23 @@ Haremos lo siguiente:
 
 `git stash es un comando en Git que se utiliza para guardar temporalmente los cambios en el área de trabajo sin tener que comprometerlos (hacer commit) al repositorio. Esto es útil cuando necesitas cambiar de rama, actualizar el código desde el repositorio remoto o hacer alguna otra operación que requiere un área de trabajo limpia, pero no quieres perder los cambios que aún no has terminado.
 
-* ¿Para qué sirve git stash?
+#### ¿Para qué sirve git stash?
 Guardar cambios temporalmente: Puedes guardar tu trabajo en progreso sin comprometerlo y sin perderlo.
 
 * Cambiar de rama: Si necesitas cambiar de rama pero tienes cambios sin comprometer, puedes hacer git stash para guardarlos, cambiar de rama y luego recuperarlos.
+
+![stash](imagenes/stash.png)
+
+### COMANDOS PRINCIPALES DE GIT STASH
+
+| Comando | Descripción |
+| ------- | ----------- |
+| `git stash` | Guarda los cambios locales de forma temporal. |
+| `git stash list` | Lista todos los stashes guardados. |
+| `git stash apply` | Aplica el último stash guardado sin eliminarlo de la lista de stashes. |
+| `git stash pop` | Aplica el último stash guardado y lo elimina de la lista de stashes. |
+| `git stash drop` | Elimina el último stash guardado de la lista. |
+| `git stash clear` | Elimina todos los stashes guardados. |
+
 
 ## Git workflow
