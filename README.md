@@ -23,7 +23,14 @@ Usaremos la siguiente `git reset --hard HEAD~1`
 ## Git tag
 ## Comandos para Etiquetas (Tags)
 
-Las etiquetas son útiles para marcar puntos específicos en el historial del proyecto, como versiones de lanzamiento. Aquí están los comandos para trabajar con etiquetas:
+Las etiquetas son útiles para marcar puntos específicos en el historial del proyecto, como versiones de lanzamiento. 
+
+#### Tipos de etiquetas
+- Etiquetas livianas (lightweight tags): Son simplemente referencias a un commit específico. No contienen información adicional como el nombre del creador o la fecha de creación.
+
+- Etiquetas anotadas (annotated tags): Contienen metadatos adicionales, como el nombre del creador, la fecha, un mensaje de la etiqueta, y pueden ser firmadas con una clave GPG para mayor seguridad.
+
+* Aquí están los comandos para trabajar con etiquetas:
 
 | Comando                                    | Descripción                                                                                                   |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -35,6 +42,29 @@ Las etiquetas son útiles para marcar puntos específicos en el historial del pr
 | `git tag -d [nombre_etiqueta]`             | Elimina la etiqueta especificada localmente.                                                                  |
 | `git push origin :refs/tags/[nombre_etiqueta]` | Elimina la etiqueta especificada en el repositorio remoto.                                                     |
 
+Haremos lo siguiente:
+
+    *Crearemos 2 etiquetas una con mensaje (anotada) y otra sin mensaje (liviana):
+
+    - `git tag -a [nombre_etiqueta] -m "[mensaje]"`
+    - `git tag [nombre_etiqueta]`
+
+![foto](imagenes/etiquetas%20(2).png)
+
+![foto](imagenes/detallesEtiq.png)
+
+
+    * Las subiremos todas al repositorio remoto (se puede ver en las capturas como una tiene mensaje y otra no):
+  
+![foto](imagenes/subida.png)
+
+![foto](imagenes/etRemoto.png)
+
+![foto](imagenes/uno.png)
+
+![foto](imagenes/dos.png)
+
+  
 ## Git stash
 
 ## Git workflow
