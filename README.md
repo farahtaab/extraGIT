@@ -1,11 +1,11 @@
 # Actividades extra de GIT
 
-## Modifica el mensaje del último commit
+## Modificar el mensaje del último commit
 Para cambiar el mensaje del último commit usaremos el comando siguiente `git commit --amend -m "[mensaje]"`
 
 ![Cambiar-mensaje-commit](imagenes/cambiarMssj.png)
 
-## Elimina el último commit 
+## Eliminar el último commit 
 Tenemos varias opciones:
 | **Comando**                      | **Descripción**                                                                                               | **Consideraciones**                                                                                     |
 |----------------------------------|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -21,6 +21,19 @@ Usaremos la siguiente `git reset --hard HEAD~1`
 ![Recuperar-ult-commit](imagenes/resuperarUltCommit.png)
 
 ## Git tag
+## Comandos para Etiquetas (Tags)
+
+Las etiquetas son útiles para marcar puntos específicos en el historial del proyecto, como versiones de lanzamiento. Aquí están los comandos para trabajar con etiquetas:
+
+| Comando                                    | Descripción                                                                                                   |
+|--------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| `git tag`                                  | Muestra la lista de etiquetas en el repositorio.                                                              |
+| `git tag [nombre_etiqueta]`                | Crea una nueva etiqueta ligera con el nombre especificado.                                                    |
+| `git tag -a [nombre_etiqueta] -m "[mensaje]"` | Crea una nueva etiqueta anotada con el nombre y mensaje especificados.                                         |
+| `git push origin [nombre_etiqueta]`        | Sube la etiqueta especificada al repositorio remoto.                                                          |
+| `git push origin --tags`                   | Sube todas las etiquetas al repositorio remoto.                                                               |
+| `git tag -d [nombre_etiqueta]`             | Elimina la etiqueta especificada localmente.                                                                  |
+| `git push origin :refs/tags/[nombre_etiqueta]` | Elimina la etiqueta especificada en el repositorio remoto.                                                     |
 
 ## Git stash
 
